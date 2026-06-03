@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://therightdraft.com/sitemap.xml
