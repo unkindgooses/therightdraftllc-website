@@ -1,37 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#dff6e0" />
-      <stop offset="100%" stop-color="#a8dcd1" />
-    </linearGradient>
-    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#eaeaea" />
-      <stop offset="100%" stop-color="#cfd7cd" />
-    </linearGradient>
-    <linearGradient id="palm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1f5c3f" />
-      <stop offset="100%" stop-color="#7bb270" />
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#eef7ee" />
     </linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#sky)" />
-  <circle cx="640" cy="120" r="70" fill="#f5f6b9" />
-  <rect x="200" y="320" width="400" height="220" rx="110" fill="url(#road)" />
-  <path d="M240 380 C250 340, 260 320, 320 320 C380 320, 390 340, 400 380" fill="#c7d2c2" />
-  <path d="M520 380 C530 340, 540 320, 600 320 C660 320, 670 340, 680 380" fill="#c7d2c2" />
-  <path d="M335 550 L365 550 L390 380 L355 380 Z" fill="#8a7f62" />
-  <path d="M465 550 L495 550 L520 380 L485 380 Z" fill="#8a7f62" />
-  <g fill="url(#palm)">
-    <path d="M352 382 C334 360, 320 330, 344 308 C363 292, 392 288, 412 302 C426 312, 434 330, 432 350 C428 368, 414 384, 392 388 Z" />
-    <path d="M342 350 C322 336, 302 302, 324 282 C343 266, 372 262, 392 276 C408 286, 420 306, 418 328 C416 348, 404 366, 386 370 Z" />
-    <path d="M342 320 C322 304, 292 280, 316 256 C340 232, 372 236, 390 258 C402 274, 402 294, 388 308 C372 322, 352 332, 342 320 Z" />
-    <path d="M472 382 C454 360, 440 330, 464 308 C483 292, 512 288, 532 302 C546 312, 554 330, 552 350 C548 368, 534 384, 512 388 Z" />
-    <path d="M462 350 C442 336, 422 302, 444 282 C463 266, 492 262, 512 276 C528 286, 540 306, 538 328 C536 348, 524 366, 506 370 Z" />
-    <path d="M462 320 C442 304, 412 280, 436 256 C460 232, 492 236, 510 258 C526 274, 526 294, 512 308 C496 322, 476 332, 462 320 Z" />
+  <rect width="800" height="600" fill="url(#bg)" />
+  <rect x="80" y="100" width="640" height="400" rx="18" fill="#ffffff" stroke="#dfe7dd" />
+  <rect x="120" y="140" width="560" height="320" rx="8" fill="#fbfdf9" />
+  <rect x="140" y="170" width="480" height="40" rx="6" fill="#f0f6ef" />
+  <rect x="140" y="220" width="480" height="14" rx="6" fill="#e6efe5" />
+  <rect x="140" y="245" width="420" height="14" rx="6" fill="#e6efe5" />
+  <rect x="140" y="270" width="360" height="14" rx="6" fill="#e6efe5" />
+  <rect x="140" y="310" width="260" height="8" rx="6" fill="#dce6db" />
+  <path d="M430 360 C460 340, 520 330, 560 360" stroke="#2f7f46" stroke-width="6" fill="none" stroke-linecap="round" />
+  <rect x="460" y="328" width="120" height="18" rx="6" fill="#2f7f46" />
+  <g transform="translate(120,360)">
+    <path d="M90 0 C110 -6, 130 -6, 150 0 C170 6, 170 20, 150 26 L60 26 C40 20, 40 6, 60 0 Z" fill="#f4eada" />
+    <path d="M60 26 L160 26 L185 50 L35 50 Z" fill="#d9d9d9" />
+    <rect x="145" y="6" width="8" height="28" rx="2" fill="#6b6b6b" transform="rotate(-25 149 20)" />
   </g>
-  <path d="M160 430 C180 400, 220 380, 235 390 C250 400, 265 426, 260 460 C255 488, 220 520, 190 520 C170 520, 150 500, 160 430 Z" fill="url(#palm)" />
-  <path d="M120 480 L140 480 L148 402 L128 402 Z" fill="#8a7f62" />
-  <path d="M660 440 C680 410, 720 390, 735 400 C750 410, 765 436, 760 470 C755 498, 720 530, 690 530 C670 530, 650 510, 660 440 Z" fill="url(#palm)" />
-  <path d="M620 490 L640 490 L648 412 L628 412 Z" fill="#8a7f62" />
-  <path d="M240 340 L560 340 L560 360 L240 360 Z" fill="#f9f7d9" opacity="0.8" />
-  <text x="400" y="525" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" fill="#2f7f46" font-weight="700">Florida street scene</text>
+  <g>
+    <circle cx="680" cy="480" r="36" fill="#7bb270" opacity="0.95" />
+    <text x="680" y="488" text-anchor="middle" font-family="Merriweather, serif" font-size="22" fill="#15421f" font-weight="700">TRD</text>
+  </g>
 </svg>
