@@ -8,7 +8,7 @@
   <rect width="1200" height="630" fill="url(#bg)" />
   <rect x="60" y="100" width="1080" height="430" rx="38" fill="rgba(255, 255, 255, 0.22)" />
   <text x="90" y="220" font-family="Inter, sans-serif" font-size="68" font-weight="800" fill="#15421f">The Right Draft</text>
-  <text x="90" y="320" font-family="Inter, sans-serif" font-size="38" fill="#2f7f46">Probate & estate planning document support</text>
+  <text x="90" y="320" font-family="Inter, sans-serif" font-size="38" fill="#2f7f46">Probate &amp; estate planning document support</text>
   <text x="90" y="390" font-family="Inter, sans-serif" font-size="28" fill="#386442">For attorneys, paralegals, and law firms in Florida</text>
   <circle cx="1060" cy="520" r="80" fill="#7bb270" opacity="0.95" />
 </svg>

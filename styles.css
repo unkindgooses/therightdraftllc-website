@@ -78,12 +78,7 @@ textarea {
 .logo-mark {
   width: 54px;
   height: 54px;
-  display: grid;
-  place-items: center;
-  background: #7bb270;
-  color: #0f2d18;
-  font-weight: 800;
-  border-radius: 16px;
+  flex-shrink: 0;
 }
 
 .site-nav {
