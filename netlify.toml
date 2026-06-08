@@ -2,7 +2,5 @@
   publish = "."
   command = ""
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Static site — no catch-all SPA redirect needed.
+# Each .html file is served directly by Netlify.
