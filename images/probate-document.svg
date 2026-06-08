@@ -1,0 +1,110 @@
+<svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+
+  <!-- Page shadow -->
+  <rect x="18" y="18" width="390" height="310" rx="4" fill="rgba(0,0,0,0.08)"/>
+
+  <!-- Main document page -->
+  <rect x="10" y="10" width="390" height="310" rx="4" fill="#FDFCF8"/>
+  <rect x="10" y="10" width="390" height="310" rx="4" fill="none" stroke="#D4C9A8" stroke-width="1"/>
+
+  <!-- Top gold border bar -->
+  <rect x="10" y="10" width="390" height="6" rx="2" fill="#C8A84B"/>
+
+  <!-- Header area -->
+  <rect x="30" y="28" width="350" height="52" rx="2" fill="none" stroke="#C8A84B" stroke-width="1.2"/>
+
+  <!-- State of Florida text -->
+  <text x="205" y="46" text-anchor="middle" font-size="8.5" fill="#8B7340" letter-spacing="3" font-style="normal">STATE OF FLORIDA</text>
+  <text x="205" y="62" text-anchor="middle" font-size="13" fill="#1f5c3f" font-weight="bold" letter-spacing="1">IN THE CIRCUIT COURT</text>
+  <text x="205" y="74" text-anchor="middle" font-size="8" fill="#8B7340" letter-spacing="2">PROBATE DIVISION</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="92" x2="400" y2="92" stroke="#C8A84B" stroke-width="0.8"/>
+  <line x1="30" y1="95" x2="400" y2="95" stroke="#C8A84B" stroke-width="0.3"/>
+
+  <!-- Case info block -->
+  <text x="40" y="112" font-size="8" fill="#555" letter-spacing="0.5">IN RE: ESTATE OF</text>
+  <text x="40" y="126" font-size="11" fill="#1a1a1a" font-weight="bold">DECEASED INDIVIDUAL</text>
+  <line x1="40" y1="130" x2="220" y2="130" stroke="#999" stroke-width="0.6"/>
+
+  <text x="280" y="112" font-size="7.5" fill="#555" letter-spacing="0.5">CASE NO.</text>
+  <text x="280" y="126" font-size="10" fill="#1a1a1a">2024-CP-000000-XX</text>
+  <line x1="280" y1="130" x2="400" y2="130" stroke="#999" stroke-width="0.6"/>
+
+  <!-- Document title -->
+  <text x="205" y="152" text-anchor="middle" font-size="12.5" fill="#1f5c3f" font-weight="bold" letter-spacing="0.5">PETITION FOR ADMINISTRATION</text>
+  <line x1="80" y1="157" x2="330" y2="157" stroke="#C8A84B" stroke-width="0.8"/>
+
+  <!-- Body text lines -->
+  <text x="40" y="175" font-size="7.5" fill="#444">Petitioner, pursuant to Florida Probate Code §733.202, respectfully</text>
+  <text x="40" y="187" font-size="7.5" fill="#444">petitions this Court for the administration of the above-referenced</text>
+  <text x="40" y="199" font-size="7.5" fill="#444">estate and states the following in support thereof:</text>
+
+  <!-- Numbered items -->
+  <text x="40" y="216" font-size="7.5" fill="#333">1.   The decedent passed away on _________________, in</text>
+  <text x="40" y="228" font-size="7.5" fill="#333">      _________________________ County, Florida.</text>
+
+  <text x="40" y="244" font-size="7.5" fill="#333">2.   The estimated value of the estate subject to administration</text>
+  <text x="40" y="256" font-size="7.5" fill="#333">      is $__________________.</text>
+
+  <text x="40" y="272" font-size="7.5" fill="#333">3.   The decedent's Will, dated _________________, is filed</text>
+  <text x="40" y="284" font-size="7.5" fill="#333">      herewith and was duly executed per Florida Statute §732.502.</text>
+
+  <!-- Bottom signature area -->
+  <line x1="30" y1="300" x2="400" y2="300" stroke="#C8A84B" stroke-width="0.6"/>
+  <text x="40" y="312" font-size="7" fill="#888">Prepared by: The Right Draft LLC  ·  Florida Probate Document Preparation</text>
+
+  <!-- Gold seal (right side, overlapping) -->
+  <g transform="translate(355, 240)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#C8A84B" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <circle cx="0" cy="0" r="40" fill="rgba(200,168,75,0.08)" stroke="#C8A84B" stroke-width="2"/>
+    <circle cx="0" cy="0" r="30" fill="rgba(200,168,75,0.12)" stroke="#C8A84B" stroke-width="1"/>
+    <!-- Scales of justice icon -->
+    <!-- Center post -->
+    <line x1="0" y1="-18" x2="0" y2="14" stroke="#C8A84B" stroke-width="1.8"/>
+    <!-- Top crossbar -->
+    <line x1="-16" y1="-10" x2="16" y2="-10" stroke="#C8A84B" stroke-width="1.5"/>
+    <!-- Left scale chain + bowl -->
+    <line x1="-16" y1="-10" x2="-16" y2="2" stroke="#C8A84B" stroke-width="0.9"/>
+    <path d="M-22,2 Q-16,8 -10,2" fill="none" stroke="#C8A84B" stroke-width="1.4"/>
+    <!-- Right scale chain + bowl -->
+    <line x1="16" y1="-10" x2="16" y2="2" stroke="#C8A84B" stroke-width="0.9"/>
+    <path d="M10,2 Q16,8 22,2" fill="none" stroke="#C8A84B" stroke-width="1.4"/>
+    <!-- Base -->
+    <line x1="-8" y1="14" x2="8" y2="14" stroke="#C8A84B" stroke-width="1.8"/>
+    <!-- Seal text -->
+    <text x="0" y="26" text-anchor="middle" font-size="5.5" fill="#C8A84B" letter-spacing="1" font-family="Arial, sans-serif">FLORIDA</text>
+  </g>
+
+  <!-- Second page peeking behind -->
+  <rect x="415" y="25" width="95" height="290" rx="3" fill="#F5F0E8" stroke="#D4C9A8" stroke-width="0.8"/>
+  <rect x="415" y="25" width="95" height="5" rx="1" fill="#B8962A"/>
+  <!-- Lines on second page -->
+  <line x1="425" y1="48" x2="500" y2="48" stroke="#DDD" stroke-width="1"/>
+  <line x1="425" y1="58" x2="500" y2="58" stroke="#DDD" stroke-width="1"/>
+  <line x1="425" y1="68" x2="500" y2="68" stroke="#DDD" stroke-width="1"/>
+  <line x1="425" y1="78" x2="490" y2="78" stroke="#DDD" stroke-width="1"/>
+  <line x1="425" y1="95" x2="500" y2="95" stroke="#DDD" stroke-width="1"/>
+  <line x1="425" y1="105" x2="500" y2="105" stroke="#DDD" stroke-width="1"/>
+  <line x1="425" y1="115" x2="495" y2="115" stroke="#DDD" stroke-width="1"/>
+  <line x1="425" y1="125" x2="500" y2="125" stroke="#DDD" stroke-width="1"/>
+
+  <!-- Gold fountain pen -->
+  <g transform="rotate(-38, 460, 200) translate(440, 155)">
+    <!-- Cap -->
+    <rect x="-4" y="0" width="8" height="28" rx="4" fill="#C8A84B"/>
+    <rect x="-2.5" y="1" width="2" height="25" rx="1" fill="#E8C860" opacity="0.6"/>
+    <rect x="-4" y="26" width="8" height="2" rx="0.5" fill="#A8882B"/>
+    <!-- Barrel -->
+    <rect x="-4" y="28" width="8" height="32" rx="1" fill="#D4A843"/>
+    <rect x="-2.5" y="29" width="2" height="30" rx="1" fill="#F0D870" opacity="0.4"/>
+    <rect x="-4" y="59" width="8" height="2" rx="0.5" fill="#A8882B"/>
+    <!-- Grip -->
+    <path d="M-4,61 L-3,68 L3,68 L4,61 Z" fill="#B8922F"/>
+    <!-- Nib -->
+    <path d="M-3,68 L0,78 L3,68 Z" fill="#C8A84B"/>
+    <line x1="0" y1="68" x2="0" y2="77" stroke="#A8882B" stroke-width="0.5"/>
+  </g>
+
+</svg>
