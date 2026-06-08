@@ -486,6 +486,116 @@ textarea {
   text-decoration: underline;
 }
 
+/* ── Founder bio ── */
+.founder-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.founder-photo-wrap {
+  position: sticky;
+  top: 100px;
+}
+
+.founder-photo {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.founder-name-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 16px rgba(19,47,76,0.06);
+}
+
+.founder-name-card strong {
+  display: block;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.founder-name-card span {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.founder-bio p {
+  color: var(--muted);
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.founder-quote {
+  border-left: 3px solid #C8A84B;
+  margin: 1.75rem 0;
+  padding: 1rem 1.5rem;
+  background: rgba(200, 168, 75, 0.06);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.founder-quote p {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text) !important;
+  margin: 0 !important;
+}
+
+.founder-credentials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.credential {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 16px rgba(19,47,76,0.04);
+}
+
+.credential-value {
+  display: block;
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.credential-label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 960px) {
+  .founder-layout {
+    grid-template-columns: 1fr;
+  }
+  .founder-photo-wrap {
+    position: static;
+    max-width: 280px;
+  }
+  .founder-credentials {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Stats ── */
 .stats-card {
   display: grid;
