@@ -1,4 +1,4 @@
-name: Deploy to Netlify
+name: Deploy to Cloudflare Pages
 
 on:
   push:
@@ -9,7 +9,5 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Netlify Deploy
-        run: |
-          curl -s -X POST "https://api.netlify.com/build_hooks/6a272f2a8c9df5c957c1321b"
-          echo "Deploy triggered successfully."
+      - name: Cloudflare Pages auto-deploys on push
+        run: echo "Cloudflare Pages is connected to this repo and deploys automatically on every push to main."
