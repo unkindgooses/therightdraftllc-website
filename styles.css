@@ -493,6 +493,59 @@ textarea {
   color: #3e4b6b;
 }
 
+/* ── Hamburger button ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.hamburger:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate to X when open */
+.hamburger.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Hide mobile-only CTA inside nav on desktop */
+.nav-cta-mobile {
+  display: none;
+}
+
 @media (max-width: 960px) {
   .hero,
   .two-column,
@@ -504,12 +557,54 @@ textarea {
   }
 
   .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
+  .hamburger {
+    display: flex;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  /* Nav hidden by default on mobile */
   .site-nav {
     display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    order: 3;
+    background: #12482c;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background 0.15s;
+  }
+
+  .site-nav a:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  /* Show mobile CTA inside the nav drawer */
+  .nav-cta-mobile {
+    display: flex;
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: center;
   }
 }
 
