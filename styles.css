@@ -890,6 +890,106 @@ textarea {
   .footer-bottom { flex-direction: column; text-align: center; }
 }
 
+/* ── Section photo banner ── */
+.section-photo-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.section-photo-banner picture { display: block; }
+
+.section-photo-banner img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.section-photo-banner picture:hover img {
+  transform: scale(1.03);
+}
+
+.section-photo-banner picture:first-child img { border-radius: var(--radius) 0 0 var(--radius); }
+.section-photo-banner picture:last-child  img { border-radius: 0 var(--radius) var(--radius) 0; }
+
+/* ── Contact options ── */
+.contact-options {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-option,
+.book-call-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+}
+
+.book-call-btn {
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-call-btn:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(47,127,70,0.12);
+}
+
+.contact-option-icon {
+  font-size: 1.4rem;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: rgba(47,127,70,0.08);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.contact-option strong,
+.book-call-btn strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.contact-option span,
+.book-call-btn span:last-child {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.contact-divider {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 960px) {
+  .section-photo-banner {
+    grid-template-columns: 1fr;
+  }
+  .section-photo-banner img { height: 200px; border-radius: 0 !important; }
+  .section-photo-banner picture:first-child img { border-radius: var(--radius) var(--radius) 0 0 !important; }
+  .section-photo-banner picture:last-child img  { border-radius: 0 0 var(--radius) var(--radius) !important; }
+}
+
 /* ── FAQ ── */
 .faq-list {
   display: grid;
