@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | The Right Draft LLC</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .err-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #eef9ef 0%, #eef7ee 100%);
+    }
+    .err-header {
+      background: linear-gradient(135deg, #1f5c3f 0%, #12482c 100%);
+      padding: 1.15rem 0;
+      box-shadow: 0 14px 32px rgba(15,22,47,0.14);
+    }
+    .err-header-inner { display: flex; align-items: center; gap: 1rem; }
+    .err-header p { margin: 0; }
+    .err-main {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 3rem 1rem;
+    }
+    .err-card {
+      background: white;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      max-width: 560px;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+    }
+    .err-card-top {
+      background: linear-gradient(135deg, #1f5c3f 0%, #2f7f46 100%);
+      padding: 2.5rem 2rem 2rem;
+    }
+    .err-num {
+      font-size: 5rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.15);
+      line-height: 1;
+      margin: 0 0 0.5rem;
+      font-family: 'Merriweather', serif;
+    }
+    .err-card-top h1 { color: white; margin: 0 0 0.5rem; font-size: 1.5rem; }
+    .err-card-top p { color: rgba(255,255,255,0.8); margin: 0; }
+    .err-card-body { padding: 2rem 2.5rem 2.5rem; }
+    .err-card-body p { color: var(--muted); margin: 0 0 2rem; }
+    .err-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .err-actions .button { flex: 1; min-width: 140px; }
+    .err-footer {
+      padding: 1.5rem 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body class="err-page">
+
+  <header class="err-header">
+    <div class="container err-header-inner">
+      <a href="/"><img src="/images/logo.svg" alt="The Right Draft LLC" width="44" height="44" /></a>
+      <div>
+        <p class="eyebrow" style="color:rgba(255,255,255,0.75);font-size:1rem;">The Right Draft</p>
+        <p style="color:white;font-weight:700;font-size:0.95rem;">Never rough drafts, just The Right Draft.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="err-main">
+    <div class="err-card">
+      <div class="err-card-top">
+        <p class="err-num">404</p>
+        <h1>Page not found</h1>
+        <p>The page you're looking for doesn't exist or may have moved.</p>
+      </div>
+      <div class="err-card-body">
+        <p>Let's get you back on track. Use the links below to find what you need.</p>
+        <div class="err-actions">
+          <a href="/" class="button button-primary">Back to homepage</a>
+          <a href="/#contact" class="button button-secondary" style="background:transparent;color:var(--accent);border:1.5px solid var(--accent);">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="err-footer">
+    <p>&copy; 2026 The Right Draft LLC &nbsp;&middot;&nbsp; Florida Probate &amp; Estate Planning Document Preparation</p>
+  </footer>
+
+</body>
+</html>
