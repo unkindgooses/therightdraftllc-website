@@ -614,12 +614,11 @@
             </a>
           </div>
         </div>
-        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-          <input type="hidden" name="form-name" value="contact" />
-          <label class="hidden">
-            <span style="display:none;">Don’t fill this out if you’re human</span>
-            <input name="bot-field" style="display:none;" />
-          </label>
+        <form class="contact-form" name="contact" method="POST" action="https://api.web3forms.com/submit">
+          <input type="hidden" name="access_key" value="c067a10f-06bc-4b3e-b093-604a88e98065" />
+          <input type="hidden" name="subject" value="New Inquiry — The Right Draft LLC" />
+          <input type="hidden" name="redirect" value="https://therightdraftllc.com/thank-you" />
+          <input type="checkbox" name="botcheck" style="display:none;" />
           <label>
             Name
             <input type="text" name="Name" required />
