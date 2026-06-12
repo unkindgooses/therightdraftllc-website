@@ -88,23 +88,26 @@ textarea {
 }
 
 .site-nav a {
-  color: #C8A84B;
+  color: rgba(255, 255, 255, 0.88);
   font-weight: 600;
 }
 
 .site-nav a:hover {
-  color: #E8C860;
+  color: white;
 }
 
 .eyebrow {
   margin: 0 0 0.75rem;
+  color: #1f5c3f;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+/* Eyebrows on dark-background sections stay white */
+.site-header .eyebrow,
+.highlight-section .eyebrow {
   color: rgba(255, 255, 255, 0.88);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-size: 0.78rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-size: 0.78rem;
 }
 
 .site-header h1,
