@@ -1,11 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#eef7ee" />
-      <stop offset="100%" stop-color="#2f7f46" />
-    </linearGradient>
-  </defs>
-  <rect width="120" height="120" rx="24" fill="url(#grad)" />
-  <circle cx="60" cy="60" r="38" fill="#7bb270" />
-  <text x="50%" y="57%" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#15421f" text-anchor="middle" dominant-baseline="central">TRD</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <title>The Right Draft — Favicon</title>
+  <desc>Gold fountain pen on green circle.</desc>
+
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#2F7F46"/>
+
+  <!-- Fountain pen, angled ~-45deg, centered -->
+  <g transform="rotate(-45, 16, 16)">
+
+    <!-- Cap (top of pen) -->
+    <rect x="13.2" y="4" width="5.6" height="9" rx="2.8" fill="#C8A84B"/>
+    <!-- Cap shine -->
+    <rect x="14" y="4.5" width="1.4" height="7.5" rx="0.7" fill="#E8C860" opacity="0.7"/>
+    <!-- Cap band -->
+    <rect x="13.2" y="12.2" width="5.6" height="1.4" rx="0.4" fill="#A8882B"/>
+
+    <!-- Barrel (body of pen) -->
+    <rect x="13.2" y="13.6" width="5.6" height="10" rx="0.5" fill="#D4A843"/>
+    <!-- Barrel shine -->
+    <rect x="14" y="13.8" width="1.4" height="9.5" rx="0.7" fill="#F0D870" opacity="0.5"/>
+    <!-- Barrel bottom band -->
+    <rect x="13.2" y="23" width="5.6" height="1.4" rx="0.3" fill="#A8882B"/>
+
+    <!-- Grip section (tapers toward nib) -->
+    <path d="M13.2,24.4 L14.2,27.2 L17.8,27.2 L18.8,24.4 Z" fill="#B8922F"/>
+
+    <!-- Nib (the defining fountain pen feature) -->
+    <path d="M14.2,27.2 L16,31.5 L17.8,27.2 Z" fill="#C8A84B"/>
+    <!-- Nib center slit -->
+    <line x1="16" y1="27.5" x2="16" y2="31" stroke="#A8882B" stroke-width="0.4"/>
+    <!-- Nib shine -->
+    <path d="M14.2,27.2 L15.2,27.2 L16,30.5 Z" fill="#E8C860" opacity="0.5"/>
+
+  </g>
 </svg>
