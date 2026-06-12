@@ -112,7 +112,7 @@ textarea {
 /* Header brand name uses a distinct classical font */
 .site-header .eyebrow.brand-name {
   font-family: 'Cinzel', 'Trajan Pro', Georgia, serif;
-  font-size: 1.2rem;
+  font-size: 1.3125rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 600;
