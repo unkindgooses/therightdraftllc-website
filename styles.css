@@ -59,7 +59,6 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 20;
-  box-shadow: 0 14px 32px rgba(15, 22, 47, 0.14);
 }
 
 .header-inner {
@@ -76,8 +75,8 @@ textarea {
 }
 
 .logo-mark {
-  width: 54px;
-  height: 54px;
+  width: 68px;
+  height: 68px;
   flex-shrink: 0;
 }
 
@@ -110,6 +109,16 @@ textarea {
   color: rgba(255, 255, 255, 0.88);
 }
 
+/* Header brand name uses a distinct classical font */
+.site-header .eyebrow.brand-name {
+  font-family: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+
 .site-header h1,
 .hero-copy h2,
 .section-heading h2,
@@ -121,6 +130,7 @@ textarea {
 
 .site-header h1 {
   font-size: 1rem;
+  font-style: italic;
   line-height: 1.4;
   max-width: 36rem;
 }
@@ -523,7 +533,7 @@ textarea {
 
 .founder-name-card strong {
   display: block;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--text);
   margin-bottom: 0.2rem;
 }
