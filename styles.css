@@ -336,8 +336,15 @@ textarea {
   align-items: stretch;
 }
 
-.pricing-grid--estate {
-  max-width: 780px;
+.pricing-note {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 1.25rem;
+  line-height: 1.6;
+  padding: 1rem 1.25rem;
+  background: rgba(31, 92, 63, 0.05);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .pricing-card {
