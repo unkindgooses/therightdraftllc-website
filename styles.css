@@ -582,9 +582,9 @@ textarea {
 
 .founder-credentials {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
-  margin-top: 1.75rem;
+  margin-top: 1rem;
 }
 
 .credential {
