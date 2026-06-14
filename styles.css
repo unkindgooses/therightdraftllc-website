@@ -1369,9 +1369,10 @@ textarea {
     font-size: 1.05rem;
   }
 
-  /* Hide the motto on small screens to keep header clean */
+  /* Shrink motto on small screens */
   .site-header h1 {
-    display: none;
+    font-size: 0.8rem;
+    max-width: 100%;
   }
 
   /* Headings */
