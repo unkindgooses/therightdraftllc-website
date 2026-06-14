@@ -905,19 +905,6 @@ textarea {
 
 .footer-legal-links a:hover { color: rgba(255,255,255,0.8); }
 
-@media (max-width: 960px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-  .footer-brand { grid-column: 1 / -1; }
-}
-
-@media (max-width: 600px) {
-  .footer-grid { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; text-align: center; }
-}
-
 /* ── Section photo banner ── */
 .section-photo-banner {
   display: grid;
@@ -1007,15 +994,6 @@ textarea {
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-}
-
-@media (max-width: 960px) {
-  .section-photo-banner {
-    grid-template-columns: 1fr;
-  }
-  .section-photo-banner img { height: 200px; border-radius: 0 !important; }
-  .section-photo-banner picture:first-child img { border-radius: var(--radius) var(--radius) 0 0 !important; }
-  .section-photo-banner picture:last-child img  { border-radius: 0 0 var(--radius) var(--radius) !important; }
 }
 
 /* ── FAQ ── */
@@ -1230,7 +1208,11 @@ textarea {
   display: none;
 }
 
+/* ══════════════════════════════════════════
+   RESPONSIVE — 960px (tablet / landscape phone)
+   ══════════════════════════════════════════ */
 @media (max-width: 960px) {
+  /* Collapse all multi-column grids */
   .hero,
   .two-column,
   .three-column,
@@ -1241,6 +1223,16 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  /* Section spacing */
+  .section {
+    padding: 3rem 0;
+  }
+
+  .testimonials-section {
+    padding: 3rem 1.25rem;
+  }
+
+  /* Header layout */
   .header-inner {
     flex-wrap: wrap;
     align-items: center;
@@ -1254,7 +1246,13 @@ textarea {
     display: none;
   }
 
-  /* Nav hidden by default on mobile */
+  /* Reduce logo slightly */
+  .logo-mark {
+    width: 54px;
+    height: 54px;
+  }
+
+  /* Nav drawer */
   .site-nav {
     display: none;
     flex-direction: column;
@@ -1284,26 +1282,270 @@ textarea {
     background: rgba(255,255,255,0.08);
   }
 
-  /* Show mobile CTA inside the nav drawer */
+  /* Show mobile CTA inside nav drawer */
   .nav-cta-mobile {
     display: flex;
     margin-top: 0.5rem;
     width: 100%;
     justify-content: center;
   }
+
+  /* Founder credentials: 2-col on tablet */
+  .founder-credentials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonials: 2-col → already collapses via three-column above */
+
+  /* Addon card: stack content vertically */
+  .addon-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .addon-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer: 2-col with brand spanning full width */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  /* Photo banner: single column */
+  .section-photo-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .section-photo-banner img {
+    height: 200px;
+    border-radius: 0 !important;
+  }
+
+  .section-photo-banner picture:first-child img {
+    border-radius: var(--radius) var(--radius) 0 0 !important;
+  }
+
+  .section-photo-banner picture:last-child img {
+    border-radius: 0 0 var(--radius) var(--radius) !important;
+  }
 }
 
+/* ══════════════════════════════════════════
+   RESPONSIVE — 680px (phones portrait)
+   ══════════════════════════════════════════ */
 @media (max-width: 680px) {
   .container {
-    width: min(100% - 1.5rem, var(--max-width));
+    width: min(100% - 1.25rem, var(--max-width));
+  }
+
+  /* Section spacing */
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .testimonials-section {
+    padding: 2.5rem 0.75rem;
+  }
+
+  /* Header: compact on small phones */
+  .site-header {
+    padding: 0.85rem 0;
+  }
+
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+  }
+
+  .site-header .eyebrow.brand-name {
+    font-size: 1.05rem;
+  }
+
+  /* Hide the motto on small screens to keep header clean */
+  .site-header h1 {
+    display: none;
+  }
+
+  /* Headings */
+  .hero-copy h2,
+  .section-heading h2 {
+    font-size: clamp(1.75rem, 6vw, 2.2rem);
+  }
+
+  /* Buttons full-width on mobile */
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  /* Pricing: stack cards */
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Founder photo centered and smaller */
+  .founder-photo-wrap {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .founder-photo {
+    height: 240px;
+  }
+
+  /* Founder credentials: 1-col */
+  .founder-credentials {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats */
+  .stats-card {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact form padding */
+  .contact-form {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* FAQ readable on small screens */
+  .faq-question {
+    font-size: 0.93rem;
+    padding: 1rem 1.1rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.1rem 1rem;
+  }
+
+  /* Pricing note readable */
+  .pricing-note {
+    font-size: 0.85rem;
+  }
+
+  /* Section photo banner: single column */
+  .section-photo-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .section-photo-banner img {
+    height: 180px;
+    border-radius: 0 !important;
+  }
+
+  .section-photo-banner picture:first-child img {
+    border-radius: var(--radius) var(--radius) 0 0 !important;
+  }
+
+  .section-photo-banner picture:last-child img {
+    border-radius: 0 0 var(--radius) var(--radius) !important;
+  }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — 400px (very small phones)
+   ══════════════════════════════════════════ */
+@media (max-width: 400px) {
+  .container {
+    width: min(100% - 1rem, var(--max-width));
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .site-header .eyebrow.brand-name {
+    font-size: 0.95rem;
   }
 
   .hero-copy h2,
   .section-heading h2 {
-    font-size: 2rem;
+    font-size: 1.65rem;
   }
 
-  .button {
-    width: 100%;
+  .pricing-amount {
+    font-size: 2.1rem;
+  }
+
+  .service-grid article,
+  .process-card,
+  .quote-card,
+  .contact-form {
+    padding: 1.4rem 1.1rem;
+  }
+
+  .pricing-card {
+    padding: 1.4rem 1.1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.4rem 1.1rem;
+  }
+}
+
+/* ══════════════════════════════════════════
+   LANDSCAPE PHONES (short + wide viewport)
+   ══════════════════════════════════════════ */
+@media (max-height: 500px) and (orientation: landscape) {
+  /* Ultra-compact header so content isn't buried */
+  .site-header {
+    padding: 0.5rem 0;
+    position: relative; /* Don't let sticky header eat half the screen in landscape */
+  }
+
+  .logo-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .site-header .eyebrow.brand-name {
+    font-size: 0.95rem;
+  }
+
+  .site-header h1 {
+    display: none;
+  }
+
+  /* Reduce section padding in landscape */
+  .section {
+    padding: 2rem 0;
+  }
+
+  /* Hero can be two-column in landscape */
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0 1rem;
+  }
+
+  /* Nav drawer more compact */
+  .site-nav a {
+    padding: 0.6rem 1rem;
   }
 }
