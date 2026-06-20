@@ -1,8 +1,30 @@
-node_modules
-.git
-.github
-.claude
-.wrangler
-.netlify
+# Git internals
+.git/
+
+# macOS junk
+.DS_Store
+**/.DS_Store
+
+# Wrangler internals
+.wrangler/
+
+# Netlify leftovers
+.netlify/
+netlify.toml
+
+# GitHub config (not a website file)
+.github/
+
+# Claude Code settings
+.claude/
+
+#Markdown docs and internal guides (not part of the site)
+README.md
+PRIVACY.md
+TERMS.md
+CLAUDE.md
+
+# Misc
 deploy-test.txt
+sunny-street.svg
 wrangler.jsonc
